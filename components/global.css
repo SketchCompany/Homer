@@ -1,0 +1,104 @@
+:root{
+    --back0: rgb(7, 9, 22);
+
+    --font0: rgb(250,250,255);
+    --font1: rgb(150,150,155);
+
+    --hover: rgb(13, 17, 43);
+
+    --primary: rgb(0, 245, 122);
+    --primary-border: rgb(50, 255, 150);
+    --primary-background: rgb(0, 205, 110);
+
+    --secondary: rgb(80, 0, 255);
+    --secondary-border: rgb(95, 40, 255);
+
+    --button-background: rgb(0, 75, 255);
+    --button-border: rgb(0, 150, 255);
+
+    --box-shadow: rgb(0, 0, 0, 0.3);
+    --darkgray: rgb(100, 100, 105);
+    --gray: rgb(150, 150, 155);
+    
+    --padding: 5%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--back0);
+    color: var(--font0);
+}
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+p{
+    color: var(--font1);
+}
+a{
+    color: var(--secondary);
+    text-decoration: none;
+    transition: all 250ms;
+}
+a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+img{
+    /* width: 100%;
+    height: auto; */
+    user-select: none;
+    pointer-events: none;
+}
+main{
+    padding: 75px var(--padding);
+}
+
+.marked{
+    background-color: var(--primary-background) !important;
+    color: var(--font0) !important;
+}
+.marked:hover{
+    background-color: var(--secondary) !important;
+}
+.active{
+    background-color: var(--hover) !important;
+    color: var(--font0) !important;
+}
+
+.fs-elements{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.folder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 130px;
+    padding: 15px 5px;
+    border-radius: 12px;
+    transition: all 250ms;
+    user-select: none;
+}
+.folder:hover{
+    background-color: var(--hover);
+    cursor: pointer;
+    text-decoration: none;
+}
+.folder:hover > p{
+    color: var(--font0);
+}
+.folder img{
+    box-shadow: 0 2px 3px var(--box-shadow);
+    width: 64px;
+    height: 54px;
+}
+.folder p{
+    text-align: center;
+    margin: 0;
+    transition: all 250ms;
+    font-size: 90%;
+}

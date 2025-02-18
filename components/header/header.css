@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px var(--padding);
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+}
+header .left{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+header .left .icon{
+    width: 64px;
+    height: 34px;
+}
+header .right{
+    display: flex;
+    gap: 5px;
+}
+header .right span{
+    font-size: 115%;
+}
+header .right a{
+    padding: 8px 15px;
+    border-radius: 24px;
+    color: var(--font1);
+    user-select: none;
+}
+header .right a:hover{
+    background-color: var(--hover);
+    text-decoration: none;
+    color: var(--font0);
+}
