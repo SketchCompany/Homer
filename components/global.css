@@ -65,6 +65,9 @@ main{
     background-color: var(--hover) !important;
     color: var(--font0) !important;
 }
+.active > p{
+    color: var(--font0);
+}
 
 .fs-elements{
     display: flex;
