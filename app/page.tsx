@@ -13,9 +13,10 @@ export default function MainPage(){
     }
 
     const folders = [
-        { id: 0, name: "test name for folder", href: null},
-        { id: 1, name: "test name for folder", href: null},
-        { id: 2, name: "test name for folder", href: null},
+        { id: 0, name: "test", href: null},
+        { id: 0, name: "test", href: null},
+        { id: 0, name: "test", href: null},
+        { id: 0, name: "test", href: null},
     ]
 
     return (
@@ -29,7 +30,7 @@ export default function MainPage(){
                         <p>{folder.name}</p>
                     </Link>
                 ) : (
-                    <div key={index} className={`folder ${activeFolder === index ? "active" : ""}`} onClick={() => handleFolderClick(index)} onDoubleClick={() => redirect("/files/" + folder.name)}>
+                    <div key={index} className={`folder ${activeFolder === index ? "active" : ""}`} onClick={() => handleFolderClick(index)} onDoubleClick={() => redirect("/fs/" + folder.name)}>
                         <Image src={"/folder.png"} width={128} height={108} alt="" />
                         <p>{folder.name}</p>
                     </div>
